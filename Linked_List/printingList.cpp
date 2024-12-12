@@ -19,8 +19,13 @@ int main(){
     //printing value of d using a
     cout<<(((a.next)->next)->next)->val<<endl;
     Node temp = a;
-    while(temp.next != NULL){
+    /* while(temp.next != NULL){
         cout<<temp.val<<" ";
         temp = *(temp.next);
-    }
+    } */
+   while(1){
+    cout<<temp.val<<" ";
+    if( temp.next == NULL) break;
+    temp = *(temp.next);
+   }
 }
