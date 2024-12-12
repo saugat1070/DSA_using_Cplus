@@ -18,4 +18,9 @@ int main(){
     d.next = NULL;
     //printing value of d using a
     cout<<(((a.next)->next)->next)->val<<endl;
+    Node temp = a;
+    while(temp.next != NULL){
+        cout<<temp.val<<" ";
+        temp = *(temp.next);
+    }
 }
