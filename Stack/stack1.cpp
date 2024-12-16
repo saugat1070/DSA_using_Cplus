@@ -6,7 +6,7 @@ int main(){
     st.push(1);
     st.push(2);
     st.push(3);
-    for(int i=1;i<=st.size();i++){
+    while(!st.empty()){
         cout<<st.top()<<" ";
         st.pop();
     }
