@@ -2,7 +2,7 @@
 #include<vector>
 using namespace std;
 
-double pow(double x, int n){
+double pow(double x, long n){
     if(n == 0){ return 1.00;}
     if (n > 0){
         return x * pow(x,n-1);
