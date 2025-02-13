@@ -4,15 +4,15 @@
 using namespace std;
 
 double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
-    nums1.insert(nums1.end(), nums2.begin(), nums2.end());  // Merge both vectors
-    sort(nums1.begin(), nums1.end());  // Sort the merged vector
+    nums1.insert(nums1.end(), nums2.begin(), nums2.end());  
+    sort(nums1.begin(), nums1.end());  
 
-    size_t size = nums1.size();  // Use size_t instead of int
+    size_t size = nums1.size();  
 
     if (size % 2 == 1) {
-        return nums1[size / 2];  // No warning: size_t is used
+        return nums1[size / 2];  
     } 
-    return (nums1[size / 2 - 1] + nums1[size / 2]) / 2.0;  // Ensure floating-point division
+    return (nums1[size / 2 - 1] + nums1[size / 2]) / 2.0; 
 }
 
 int main() {
